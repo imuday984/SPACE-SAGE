@@ -41,3 +41,35 @@ Key Features:
 Input parameters include mission type, altitude, and debris risk.
 Model selects the safest and most efficient orbit.
 Trained using a combination of supervised learning techniques.
+# 🌍 Orbital Path Predictor using BERT 🚀  
+
+This project predicts the best orbit for a satellite based on its functionality while minimizing collision risks with active satellites and space debris.  
+
+---
+
+## 📜 **Model Overview**  
+- **Architecture**: Fine-tuned **BERT** model for text classification.  
+- **Input**: Satellite functionality in natural language.  
+- **Processing**:  
+  1. Converts text input into tokenized embeddings using **BERT tokenizer**.  
+  2. Fine-tuned **BERTForSequenceClassification** maps input to an orbit type.  
+  3. The model also considers space debris data to suggest alternative orbits if congestion is high.  
+- **Output**:  
+  - **Primary orbit suggestion** (e.g., LEO, MEO, GEO, HEO).  
+  - **Warning if the orbit is congested**.  
+  - **Suggested alternative orbit** with an estimated altitude.  
+
+---
+
+## 🏋️‍♂️ **Training Details**  
+- **Dataset**: Labeled dataset with satellite functionalities mapped to orbit types.  
+- **Pretrained Model**: `bert-base-uncased` fine-tuned with classification layers.  
+- **Loss Function**: Cross-entropy loss.  
+- **Optimizer**: AdamW.  
+- **Metrics**: Accuracy, F1-score.  
+
+---
+
+## 🚀 **Inference**  
+- Given an input text (e.g., `"Earth observation and climate monitoring"`), the model predicts:  
+
