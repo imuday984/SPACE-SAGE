@@ -9,27 +9,99 @@ Image pre-processing (resizing, normalization).
 CNN layers for feature extraction.
 Softmax activation for classification.
 
+# 🌌 Galaxy Classification using CNN 🚀  
+
+This project builds a **Convolutional Neural Network (CNN)** to classify different types of galaxies (e.g., **Elliptical, Spiral, Irregular**) based on observational images. It aims to automate galaxy classification to assist astronomers in cosmological research.  
+
+---
+
+## 📜 **Model Overview**  
+- **Architecture**: CNN-based image classifier.  
+- **Input**: Galaxy images.  
+- **Processing**:  
+  1. Loads and preprocesses images (resizing, normalization).  
+  2. Trains a CNN model on labeled galaxy images.  
+  3. Evaluates the model on test images and visualizes performance.  
+- **Output**:  
+  - **Galaxy type prediction** (Elliptical, Spiral, Irregular).  
+  - **Model accuracy and loss metrics**.  
+  
+---
+
+## 🏋️‍♂️ **Training Details**  
+- **Dataset**: Publicly available galaxy images from open-source sources.  
+- **Preprocessing**: Image resizing (128x128), normalization.  
+- **Model**: CNN with Conv2D, MaxPooling, Flatten, Dense layers.  
+- **Loss Function**: Categorical Cross-Entropy.  
+- **Optimizer**: Adam.  
+- **Metrics**: Accuracy, Confusion Matrix.  
+  
+---
+
+## 🚀 **Inference**  
+- Given an input image of a galaxy, the model predicts:  
+  - "Elliptical Galaxy"  
+  - "Spiral Galaxy"  
+  - "Irregular Galaxy"  
+
+---
+
+  
+
+---
+
+## 🛠 **Tech Stack**  
+- **Python** 🐍  
+- **TensorFlow / Keras** 🔥  
+- **OpenCV** 📷  
+- **NumPy & Pandas** 📊  
+- **Matplotlib** 📈  
+- **Google Colab** ⚡  
+  
+---
 
 
 
-2️⃣ AndreShift
-Purpose: Predicts whether a galaxy is approaching or receding relative to the Andromeda galaxy.
-Approach: Regression model using distance (kpc) and radial velocity (km/sec) as input features.
-Key Features:
-Uses a simple feed-forward neural network (FFNN).
-Trained using Mean Squared Error (MSE) loss.
-Evaluates prediction accuracy with RMSE.
 
 
 
 
-3️⃣ ExoHabit
-Purpose: Determines the habitability of an exoplanet based on its atmospheric conditions.
-Approach: Classification model trained with labeled exoplanet data.
-Key Features:
-Inputs: CO2, O2, N2, H2O percentage, atmospheric pressure, albedo, temperature (K), and greenhouse effect.
-Uses Random Forest / Neural Network for classification.
-Outputs: "Habitable" or "Non-Habitable."
+
+
+
+
+
+
+
+
+
+---
+
+## 2️⃣ **AndreShift**  
+### **Purpose:**  
+Predicts whether a galaxy is **approaching or receding** relative to the Andromeda galaxy.  
+
+### **Approach:**  
+Regression model using **distance (kpc) and radial velocity (km/sec)** as input features.  
+
+### **Key Features:**  
+- Uses a **simple feed-forward neural network (FFNN)**.  
+- Trained using **Mean Squared Error (MSE) loss**.  
+- Evaluates prediction accuracy with **Root Mean Square Error (RMSE)**.  
+
+---
+
+## 3️⃣ **ExoHabit**  
+### **Purpose:**  
+Determines the **habitability of an exoplanet** based on its atmospheric conditions.  
+
+### **Approach:**  
+Classification model trained with labeled exoplanet data.  
+
+### **Key Features:**  
+- **Inputs:** CO2, O2, N2, H2O percentage, atmospheric pressure, albedo, temperature (K), and greenhouse effect.  
+- Uses **Random Forest / Neural Network** for classification.  
+- **Outputs:** "Habitable" or "Non-Habitable."
 
 
 
